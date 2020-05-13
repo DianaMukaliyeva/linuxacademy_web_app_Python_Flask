@@ -4,14 +4,19 @@ notes
 
 notes is a note-taking application that allows us to write notes using **Markdown**. Ideally, this application would be great for storing code snippets with some notes about what we were doing and how the code works.
 
-# Quickstart
+## Prerequisites
+
+Make sure you have installed all of the following prerequisites on your development machine:
+- postgresql
+- python3
+- pip
+- pipenv
 
 ## Installation
 
-
 1. Set up your local environment in .env.
 
-2. Ensure `pip` and `pipenv` are installed. To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
+2. To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
 
 ```
 $ pipenv install
