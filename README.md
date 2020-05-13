@@ -37,5 +37,6 @@ $ flask run
 
 5. Navigate to Home page http://localhost:5000
 
-##License
+## License
+
 notes is a public domain work, dedicated using CC0 1.0. Feel free to do whatever you want with it.
