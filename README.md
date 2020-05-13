@@ -8,21 +8,26 @@ notes is a note-taking application that allows us to write notes using **Markdow
 
 ## Installation
 
-1. Ensure `pip` and `pipenv` are installed. To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
+
+1. Set up your local environment in .env.
+
+2. Ensure `pip` and `pipenv` are installed. To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
 
 ```
+$ pipenv install
 $ pipenv shell
-$ pip install -r requirements.txt
 ```
 
-2. Set up your local environment in .env.
-
-3. Run the development server:
+3. For the first time apply the migration to the database:
 
 ```
-$ export FLASK_APP='.'
-$ export FLASK_ENV=development # enables debug mode
+$ flask db upgrade
+```
+
+4. Run the development server:
+
+```
 $ flask run
 ```
 
-4. Navigate to Home page http://localhost:5000
+5. Navigate to Home page http://localhost:5000
