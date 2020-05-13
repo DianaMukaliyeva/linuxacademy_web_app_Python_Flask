@@ -1,40 +1,28 @@
 
-ipgbcckup
+notes
 ========
 
-CLI for backing up remote PostgreSQL databases locally or to AWS S3.
+notes is a note-taking application that allows us to write notes using **Markdown**. Ideally, this application would be great for storing code snippets with some notes about what we were doing and how the code works.
 
-## Usage
+# Quickstart
 
-Pass in a full database URL, the storage driver, and destination.
+## Installation
 
-S3 Example w/ bucket name:
-
-```
-$ pgbackup postgres://bob@example.com:5432/db_one --driver s3 backups
-```
-
-Local Example w/ local path:
+1. Ensure `pip` and `pipenv` are installed. To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
 
 ```
-$ pgbackup postgres://bob@example.com:5432/db_one --driver local /var/local/db_one/backups
+$ pipenv shell
+$ pip install -r requirements.txt
 ```
 
-## Installation From Source
+2. Set up your local environment in .env.
 
-To install the package after you've cloned the repository, you'll want to run the following command from within the project directory:
+3. Run the development server:
 
 ```
-$ pip install --user -e .
+$ export FLASK_APP='.'
+$ export FLASK_ENV=development # enables debug mode
+$ flask run
 ```
 
-## Preparing for Development
-
-Follow these steps to start developing with this project:
-
-1. Ensure `pip` and `pipenv` are installed
-2. Clone repository: `git clone git@github.com:dianamukaliyeva/pgbackup`
-3. `cd` into the repository
-4. Activate virtualenv: `pipenv shell`
-5. Install dependencies: `pipenv install`
-
+4. Navigate to Home page http://localhost:5000
